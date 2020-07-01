@@ -1,0 +1,732 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+			#bottom1{
+				width: 100%;
+				background-color: white;
+				margin-top: 60px;
+			}
+				#ll{
+					border-bottom: 1p solid red;
+				}
+			.pleft{
+				border-bottom: 1px solid #EEEEEE;
+			}
+			.par{
+				
+				background-color: #C39966;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				z-index: 10000;
+				
+			}
+			body{
+				background-color:#F6F6F6;
+			}
+			#pa{
+				width: 100%;
+				background-color:#C39966;
+				
+				
+				
+			}
+			#d10{
+				height: 100%;
+			}
+			#total{
+				background-color:#F6F6F6;
+			}
+			#img1{
+				padding-bottom: 0;
+				width: 70%;
+				height: 50pxpx;
+				
+			}
+			#u1{
+				vertical-align: middle;
+				color:#eeeeee;
+				line-height:3;
+				
+			}
+			#u2{
+				font-size: 15px;
+			}
+			#u2>li{
+				padding-right: 5px;
+				color:#eeeeee;
+				padding-bottom: 0;
+			}
+			#d1{
+				height: 30%;
+			}
+			#tab1{
+				height: 100%;
+			}
+			#inp-div{
+				padding: 0 5px;
+				    border-radius: 5px;
+				    background-color: white;
+				    margin: 7px 0;
+			}
+			#u2>li:first-child{
+				border-bottom: 1px solid white;
+			}
+			#img2{
+				width: 20px;
+				height: 20px;
+				line-height: 1;
+				margin: 3px 0 0 0;
+			}
+			#p1{
+				
+				margin: 2px 0 0 -200%;
+			    border-bottom: 1px solid #eee;
+				font-weight: bold;
+			}
+			#left{
+				border: 1px solid #eee;
+			}
+			#d100{
+				border-radius: 10px;
+				background:white;
+			}
+			.bord{
+				border: 1px;
+				background-color: white;
+				border-radius: 10px;
+				padding: 10px;
+				padding-bottom: 5px;
+			}
+			
+				
+			#body{
+				margin-top: 100px;
+			}
+			#d101{
+				border-bottom: 3px solid #eee;
+				padding-top: 60px;
+				border-radius: 0;
+			}
+			@media (min-width: 1000px) {
+				#d101>div>ul>li>a{
+					padding: 0 12px;
+					color: #000000;
+					font-size: 14px;
+				}
+			}
+			@media (max-width: 999.99) {
+				#d101>div>ul>li>a{
+					padding: 0 12px;
+					color: #000000;
+					font-size: 5px;
+				}
+			}
+			#d101>div>ul{
+				display: flex;
+			}
+			
+			
+			#d101:last-child ul li a{
+				padding-right: 10px ;
+				color: #000000;
+			}
+				
+			p a{
+				color: #999999;
+				font-size: 15px;
+			}
+				
+			.thecolor2{
+				color:#999999;
+			}
+			#d10+div ul li a{
+				color: #eeeeee;;
+			}
+			#d11 div div ul li a{
+				color: #EEEEEE;
+			}
+			#body1 div div :not(first-child){
+				color: #000000;
+			}
+			.thecolor{
+				border: 1px solid #eeee;
+			}
+			.thebottom{
+				border-top: 1px solid #EEEEEE;
+			}
+			
+			
+			@media (min-width:992px) and (max-width:1200px) {
+				.test{
+					padding-top: 10px;
+					z-index: 100000;
+					font-size: 10px;
+				}
+				#u2 li a{
+					font-size: 5;
+					z-index: 10000;
+				}
+				
+			}
+			@media (min-height:1200px) {
+				.the10{
+					font-size: 8px;
+					border: 1px solid black;
+					z-index: 100000;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="par">
+			<div class="container total1">
+				<div class="row no-gutters">
+					
+					
+					<div id="d10" class="col-2 justify-content-end"><a href=""><img class="pt-1 mt-2 pl-1 ml-5 d-sm-none d-lg-block" id="img1" src="logo.png" alt=""></a></div>
+					<div class="col-lg-6 col-sm-12 pb-0">
+						<ul id="u1" class="list-unstyled d-flex justify-content-around justify-content-sm-between mb-sm-0 mt-sm-1 test">
+							<li class="pl-1 pr-2"><a href="">首页</a></li>
+							<li class="pr-2"><a href="">分类</a></li>
+							<li class="pr-2"><a href="">作者</a></li>
+							<li class="pr-2"><a href="">排行榜</a></li>
+							<li class="pr-2"><a href="">课本古诗</a></li>
+							<li class="pr-2"><a href="">词牌名</a></li>
+							<li class="pr-2"><a href="">藏头诗</a></li>
+							<li class="pr-2"><a href="">合称</a></li>
+							<li class="pr-2"><a href="">古籍</a></li>
+							<li class="pr-2"><a href="">安卓下载</a></li>
+						</ul>
+					</div>
+					<div id="d11" class="col-lg-4 col-sm-12" id="tab1">
+						<div class="row no-gutters">
+							<div class="col-10 justify-content-between" id="d1">
+								<ul id="u2" class="list-unstyled d-flex mb-0 test1">
+									<li><a href="#">综合</a></li>
+									<li><a href="">作者</a></li>
+									<li><a href="">标题</a></li>
+									<li><a href="">诗句</a></li>
+									<li><a href="">句首</a></li>
+									<li><a href="">句尾</a></li>
+									<li><a href="">古籍</a></li>
+									<li><a href="">成语</a></li>
+								</ul>
+							</div>
+							<div id="inp-div" class="col-12 border">
+								<div class="row no-gutters">
+									<div class="col-11 justify-content-between">
+										<input class="w-100 border-0" type="text">
+									</div>
+									<div class="col-1">
+										<img id="img2" src="web_search.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="body" class="container total1">
+			<div style="" class="row no-gutters">
+				
+				<div class="col-lg-8 col-sm-12" >
+					<div class="bord">
+						<div>
+							<div>
+								<div class="row no-gutters">
+									
+									<div class="col-2 text-center">
+										<div>
+											<p class="thecolor2">[现代] <br> <a href="">毛泽东</a></p>
+										</div>
+									</div>
+									<div class="col-10">
+										<div>
+											<p class="h6"><a class="title1" href="">《蝶恋花·答李淑一》</a></p>
+											<ul class="list-unstyled">
+												<li>我失骄杨君失柳，</li>
+												<li>杨柳轻飏直上重霄九。</li>
+												<li>问讯吴刚何所有，</li>
+												<li>吴刚捧出桂花酒。</li>
+												<li>寂寞嫦娥舒广袖，</li>
+												<li>万里长空且为忠魂舞。</li>
+												<li>忽报人间曾伏虎，</li>
+												<li>泪飞顿作倾盆雨。</li>
+												<p><a href="">收起</a></p>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center" >
+							<div><p class="thecolor2">宋 <br><a href="">苏轼</a></p></div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="">《江城子·乙卯正月二十日夜记梦》</a></p>
+								<ul class="list-unstyled">
+									<li>十年生死两茫茫，不思量，自难忘。千里孤坟，无</li>
+									<li>处话凄凉。纵使相逢应不识，尘满面，鬓如霜。</li>
+									<li>夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟</li>
+									<li>惟有泪千行。料得年年肠断处，明月夜，短松冈。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2 border-danger">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[清] <br><a href="">纳兰性德</a></p></div>
+							</div>
+						</div>	
+						<div class="col-10">
+							<div>
+		                         <p><a href="#">《蝶恋花·今古河山无定据》</a></p>
+								<ul class="list-unstyled">
+									<li>今古河山无定据，画角声中，牧马频来去。</li>
+									<li>满目荒凉谁可语？西风吹老丹枫树。</li>
+									<li>从前幽怨应无数？铁马金戈，青冢黄昏路。</li>
+									<li>一往情深深几许？深山夕照深秋雨。</li>
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[宋]<br><a href="">范成大</a></p></div>
+							</div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="#">《四时田园杂兴（其三十一）》</a></p>
+								<ul class="list-unstyled">
+									<li>昼出耘田夜绩麻，</li>
+									<li>村庄儿女各当家。</li>
+									<li>童孙未解供耕织，</li>
+									<li>也傍桑阴学种瓜。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[宋]<br><a href="">辛弃疾</a></p></div>
+							</div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="#">《贺新郎·把酒长亭说》</a></p>
+								<ul class="list-unstyled">
+									<li>把酒长亭说</li>
+									<li>看渊明、风流酷似，卧龙诸葛。</li>
+									<li>何处飞来林间鹊？蹙踏松梢残雪。</li>
+									<li>要破帽、多添华发。</li>
+									<li>剩水残山无态度，被疏梅、料理成风月。</li>
+									<li>两三雁，也萧瑟。</li>
+									<li>佳人重约还轻别。</li>
+									<li>怅清江、天寒不渡，水深冰合。</li>
+									<li>路断车轮生四角，此地行人销骨。</li>
+									<li>问谁使、君来愁绝？</li>
+									<li>铸就而今相思错，料当初、费尽人间铁。</li>
+									<li>长夜笛，莫吹裂！</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[宋]<br><a href="">王安石</a></p></div>
+							</div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="#">《将母》</a></p>
+								<ul class="list-unstyled">
+									<li>将母邗沟上，留家白紵阴。<li>
+									<li>月明闻杜宇，南北总关心。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[唐]<br><a href="">王昌龄</a></p></div>
+							</div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="#">《送柴侍御》</a></p>
+								<ul class="list-unstyled">
+									<li>沅水通波接武冈，送君不觉有离伤。<li>
+									<li>青山一道同云雨，明月何曾是两乡。</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[唐]<br><a href="">杜甫</a></p></div>
+							</div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="#">《梦李白二首·其二》</a></p>
+							</div>
+							<div>
+								浮云终日行，游子久不至。<br>
+								三夜频梦君，情亲见君意。
+								 <div class="panel-group" id="accordion">
+									 <div class="panel panel-default">
+										 <div id="collapseThree" class="panel-collapse collapse">
+											 <div class="panel-body">
+											 	<ul class="list-unstyled">
+											 		<li>告归常局促，苦道来不易。</li>
+											 		<li>江湖多风波，舟楫恐失坠。</li>
+											 		<li>出门搔白首，若负平生志。</li>
+											 		<li>冠盖满京华，斯人独憔悴。</li>
+											 		<li>孰云网恢恢，将老身反累。</li>
+											 		<li>千秋万岁名，寂寞身后事。</li>
+											 	</ul>
+											 </div>
+										 </div>
+										 <div class="panel-heading">
+										 		<h4 class="panel-title h6">
+										 			<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+										 				打开
+										 			</a>
+										 		</h4>
+										 </div>
+									 </div>
+								 </div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord mt-2">
+						<div class="col-2 text-center">
+							<div>
+								<div><p class="thecolor2">[宋]<br><a href="">李清照</a></p></div>
+							</div>
+						</div>
+						<div class="col-10">
+							<div>
+								<p><a href="#">《摊破浣溪沙·病起萧萧两鬓华》</a></p>
+								病起萧萧两鬓华，<br>
+								卧看残月上窗纱。
+								<div class="panel-group" id="accordion1">
+									<div class="panel panel-default">
+										<div id="collapseThree1" class="panel-collapse collapse">
+											<div class="panel-body">
+												豆蔻连梢煎熟水，<br>
+												莫分茶。 <br>
+												枕上诗书闲处好，<br>
+												门前风景雨来佳，<br>
+												终日向人多酝藉，<br>
+												木犀花。
+											</div>
+										</div>
+										
+										<div class="panel-heading">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1" class="h6">
+														点击我进行展开,再次点击我进行折叠
+													</a>
+												</h4>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<!--上面是左部分-->
+				<div id="body1" class="col-lg-4 col-sm-12 mt-sm-2">
+					<div class="bord ml-3 mr-3">
+						<div class="row no-gutters" >
+							<div class="col-12">
+								<div class="pleft">
+									<p>推荐作者</p>
+								</div>
+							</div>
+							<div class="col-4">
+								<ul class="list-unstyled">
+									<li><a href="#">李白</a></li>
+									<li><a href="#">毛泽东</a></li>
+									<li><a href="#">辛弃疾</a></li>
+									<li><a href="#">王维</a></li>
+									<li><a href="#">陆游</a></li>
+									<li><a href="#">杜牧</a></li>
+									<li><a href="#">屈原</a></li>
+									<li><a href="#">刘禹锡</a></li>
+									<li><a href="#">秦观</a></li>
+									<li><a href="#">唐寅</a></li>
+									<li><a href="#">王昌龄</a></li>
+									<li><a href="#">杨万里</a></li>
+									<li><a href="#">仓央嘉措</a></li>
+									<li><a href="#">韩愈</a></li>
+									<li><a href="#">骆宾王</a></li>
+									<li><a href="#">范成大</a></li>
+									<li><a href="#">韦应物</a></li>
+									<li><a href="#">李世民</a></li>
+									<li><a href="#">龚自珍</a></li>
+									<li><a href="#">孟郊</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul class="list-unstyled">
+									<li><a href="#">苏轼</a></li>
+									<li><a href="#">李清照</a></li>
+									<li><a href="#">李煜</a></li>
+									<li><a href="#">李商隐</a></li>
+									<li><a href="#">柳永</a></li>
+									<li><a href="#">曹雪芹</a></li>
+									<li><a href="#">李贺</a></li>
+									<li><a href="#">欧阳修</a></li>
+									<li><a href="#">鲁迅</a></li>
+									<li><a href="#">曹植</a></li>
+									<li><a href="#">王勃</a></li>
+									<li><a href="#">张九龄</a></li>
+									<li><a href="#">元稹</a></li>
+									<li><a href="#">柳宗元</a></li>
+									<li><a href="#">贺知章</a></li>
+									<li><a href="#">姜夔</a></li>
+									<li><a href="#">文天祥</a></li>
+									<li><a href="#">王之涣</a></li>
+									<li><a href="#">周邦彦</a></li>
+									<li><a href="#">谢灵运</a></li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul class="list-unstyled">
+									<li><a href="">诗经</a></li>
+									<li><a href="">杜甫</a></li>
+									<li><a href="">白居易</a></li>
+									<li><a href="">纳兰性德</a></li>
+									<li><a href="">陶渊明</a></li>
+									<li><a href="">曹操</a></li>
+									<li><a href="">孟浩然</a></li>
+									<li><a href="">王安石</a></li>
+									<li><a href="">晏殊</a></li>
+									<li><a href="">温庭筠</a></li>
+									<li><a href="">范仲淹</a></li>
+									<li><a href="">岑参</a></li>
+									<li><a href="">晏几道</a></li>
+									<li><a href="">岳飞</a></li>
+									<li><a href="">鱼玄机</a></li>
+									<li><a href="">张若虚</a></li>
+									<li><a href="">黄庭坚</a></li>
+									<li><a href="">王国维</a></li>
+									<li><a href="">朱淑真</a></li>
+									<li><a href="">贾岛</a></li>
+								</ul>
+							</div>
+						</div>
+				</div>
+					<div class="col-12">
+						<div class="bord mt-2">
+							<div class="row no-gutters">
+								<div class="col-12 pleft">
+									诗词分类
+								</div>
+								<div class="col-6">
+									<ul class="list-unstyled">
+										<li><a href="">田园诗</a></li>
+										<li><a href="">山水诗</a></li>
+										<li><a href="">励志诗</a></li>
+										<li><a href="">爱国诗</a></li>
+										<li><a href="">战争诗</a></li>
+										<li><a href="">闺怨诗</a></li>
+										<li><a href="">端午诗</a></li>
+										<li><a href="">七夕诗</a></li>
+										<li><a href="">寒食节</a></li>
+										<li><a href="">春节</a></li>
+										<li><a href="">描写夏天</a></li>
+										<li><a href="">描写冬天</a></li>
+										<li><a href="">描写雪</a></li>
+										<li><a href="">描写花</a></li>
+										<li><a href="">描写荷花</a></li>
+										<li><a href="">描写柳</a></li>
+										<li><a href="">思恋诗</a></li>
+										<li><a href="">唐诗300首</a></li>
+										<li><a href="">小学</a></li>
+										<li><a href="">高中</a></li>
+										<li><a href="">豪放诗</a></li>
+										<li><a href="">母亲</a></li>
+										<li><a href="">读书</a></li>
+										<li><a href="">古诗十九首</a></li>
+										<li><a href="">咏史诗</a></li>
+										<li><a href="">寓理诗</a></li>
+										<li><a href="">人生</a></li>
+										<li><a href="">孤独</a></li>
+										<li><a href="">讽刺</a></li>
+										<li><a href="">劳动</a></li>
+									</ul>
+								</div>
+								<div class="col-6">
+									<ul class="list-unstyled">
+										<li><a href="">送别诗</a></li>
+										<li><a href="">爱情诗</a></li>
+										<li><a href="">边塞诗</a></li>
+										<li><a href="">悼亡诗</a></li>
+										<li><a href="">友情诗</a></li>
+										<li><a href="">清明节</a></li>
+										<li><a href="">中秋节</a></li>
+										<li><a href="">重阳节</a></li>
+										<li><a href="">元宵节</a></li>
+										<li><a href="">描写春天</a></li>
+										<li><a href="">描写秋天</a></li>
+										<li><a href="">描写雨</a></li>
+										<li><a href="">描写风</a></li>
+										<li><a href="">描写梅花</a></li>
+										<li><a href="">描写菊花</a></li>
+										<li><a href="">描写月亮</a></li>
+										<li><a href="">思乡诗</a></li>
+										<li><a href="">哲理诗</a></li>
+										<li><a href="">宋词三百首</a></li>
+										<li><a href="">初中</li>
+										<li><a href="">婉约诗</a></li>
+										<li><a href="">老师</a></li>
+										<li><a href="">惜时</a></li>
+										<li><a href="">怀古诗</a></li>
+										<li><a href="">羁旅诗</a></li>
+										<li><a href="">怀才不遇</a></li>
+										<li><a href="">忧国忧民</a></li>
+										<li><a href="">悲愤</a></li>
+										<li><a href="">讽刺诗</a></li>
+										<li><a href="">赞美诗</a></li>	
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row no-gutters bord m-3">
+						<div class="col-12 pleft">
+							古籍
+						</div>
+						<div class="col-3">
+							<div class="pt-3">
+								<ul class="list-unstyled">
+									<li><a href="">四大名著</a></l>
+									<li><a href="">二十四史</a></l>
+									<li><a href="">四书</a></l>
+									<li><a href="">五经</a></l>
+									<li><a href="">演义小说</a></l>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>	
+		</div>
+		<!--接下来是最底部-->
+		<div id="bottom1">
+			<div class="container">
+				<div class="row no-gutters">
+					<div id="d101" class="col-lg-12 col-sm-10 bord mt-2">
+						<div id="dd5">
+							<ul class="list-unstyled">
+								<li><a href="">心动女友</a></li>
+								<li><a href="">梦幻激光</a></li>
+								<li><a href="">我天使</a></li>
+								<li><a href="">亿光</a></li>
+								<li><a href="">炫光贪吃蛇</a></li>
+								<li><a href="">动漫女孩工厂</a></li>
+								<li><a href="">火箭公鸡</a></li>
+								<li><a href="">翻转跳水</a></li>
+								<li><a href="">翻转火箭</a></li>
+								<li><a href="">真人火箭</a></li>
+								<li><a href="">我下楼贼溜</a></li>
+								<li><a href="">游星尖兵 </a></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="list-unstyled">
+								<li><a href="">飞机射病毒</a></li>
+								<li><a href="">萨法里：归并动物</a></li>
+								<li><a href="">趣画画</a></li>
+								<li><a href=""> 击败枪手</a></li>
+								<li><a href="">左右棋牌</a></li>
+								<li><a href="">警车自由模拟驾驶</a></li>
+								<li><a href="">富豪超市</a></li>
+								<li><a href="">一言不合就翻车</a></li>
+								<li><a href="">小猫奔跑</a></li>
+								<li><a href="">僵尸杀戮</a></li>
+							</ul>
+							<ul class="list-unstyled">
+								<li><a href="">救救那位女士</a></li>
+								<li><a href="">武动天下</a></li>
+								<li><a href="">铁匠车间</a></li>
+								<li><a href="">跑步冠军下</a></li>
+								<li><a href="">波克棋牌</a></li>
+								<li><a href=""> 水滑梯大冒险</a></li>
+								<li><a href=""> 盾牌物语</a></li>
+								<li><a href="">妈妈把我的游戏藏起来了4</a></li>
+								<li><a href="">逃离数学课</a></li>
+								<li><a href="">不思议棋牌 </a></li>
+							</ul>
+							<ul class="list-unstyled">
+								<li><a href="">手机被藏起来了</a></li>
+								<li><a href="">师父把我的金箍棒藏起来了</a></li>
+								<li><a href="">闲置营地建设</a></li>
+								<li><a href="">冒险守护者之战</a></li>
+								<li><a href=""> 火柴人不能死 </a></li>
+								<li><a href="">呕吐大战</a></li>
+								<li><a href="">致命特技</a></li>
+								<li><a href="">跨文明SLG</a></li>
+								<li><a href="">疯狂推方块 </a></li>
+							</ul>
+							<ul class="list-unstyled">
+								<li><a href="">功夫奇遇记</a></li>
+								<li><a href="">花开棋牌</a></li>
+								<li><a href="">搬运工兄弟</a></li>
+								<li><a href="">植物大战僵尸</a></li>
+								<li><a href="">奇妙时空之旅</a></li>
+								<li><a href="">奥克兰</a></li>
+								<li><a href="">荒野奇才</a></li>
+								<li><a href="">火柴人</a></li>
+								<li><a href="">吃鸡派对</a></li>
+							</ul>
+							<ul class="list-unstyled">
+								<li><a href="">爸爸不让我进游乐场</a></li>
+							</ul>
+							
+						</div>
+						<div class="col-12 thebottom">
+							<div class="my-5">
+								<ul class="list-unstyled d-flex">
+									<li><a href="">诗人古诗</a></li>
+									<li><a href="">歇后语</a></li>
+									<li><a href="">对联</a></li>
+									<li><p>Copyright © 2010-2020</p></li>
+									<li><a href="">粤ICP备09063030号-2 </a></li>
+									<li><a href="">邮箱：</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

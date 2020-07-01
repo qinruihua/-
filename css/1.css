@@ -1,0 +1,175 @@
+#bottom1{
+				width: 100%;
+				background-color: white;
+				margin-top: 60px;
+			}
+				#ll{
+					border-bottom: 1p solid red;
+				}
+			.pleft{
+				border-bottom: 1px solid #EEEEEE;
+			}
+			.par{
+				
+				background-color: #C39966;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				z-index: 10000;
+				
+			}
+			body{
+				background-color:#F6F6F6;
+			}
+			#pa{
+				width: 100%;
+				background-color:#C39966;
+				
+				
+				
+			}
+			#d10{
+				height: 100%;
+			}
+			#total{
+				background-color:#F6F6F6;
+			}
+			#img1{
+				padding-bottom: 0;
+				width: 70%;
+				height: 50pxpx;
+				
+			}
+			#u1{
+				vertical-align: middle;
+				color:#eeeeee;
+				line-height:3;
+				
+			}
+			#u2{
+				font-size: 15px;
+			}
+			#u2>li{
+				padding-right: 5px;
+				color:#eeeeee;
+				padding-bottom: 0;
+			}
+			#d1{
+				height: 30%;
+			}
+			#tab1{
+				height: 100%;
+			}
+			#inp-div{
+				padding: 0 5px;
+				    border-radius: 5px;
+				    background-color: white;
+				    margin: 7px 0;
+			}
+			#u2>li:first-child{
+				border-bottom: 1px solid white;
+			}
+			#img2{
+				width: 20px;
+				height: 20px;
+				line-height: 1;
+				margin: 3px 0 0 0;
+			}
+			#p1{
+				
+				margin: 2px 0 0 -200%;
+			    border-bottom: 1px solid #eee;
+				font-weight: bold;
+			}
+			#left{
+				border: 1px solid #eee;
+			}
+			#d100{
+				border-radius: 10px;
+				background:white;
+			}
+			.bord{
+				border: 1px;
+				background-color: white;
+				border-radius: 10px;
+				padding: 10px;
+				padding-bottom: 5px;
+			}
+			
+				
+			#body{
+				margin-top: 100px;
+			}
+			#d101{
+				border-bottom: 3px solid #eee;
+				padding-top: 60px;
+				border-radius: 0;
+			}
+			@media (min-width: 1000px) {
+				#d101>div>ul>li>a{
+					padding: 0 12px;
+					color: #000000;
+					font-size: 14px;
+				}
+			}
+			@media (max-width: 999.99) {
+				#d101>div>ul>li>a{
+					padding: 0 12px;
+					color: #000000;
+					font-size: 5px;
+				}
+			}
+			#d101>div>ul{
+				display: flex;
+			}
+			
+			
+			#d101:last-child ul li a{
+				padding-right: 10px ;
+				color: #000000;
+			}
+				
+			p a{
+				color: #999999;
+				font-size: 15px;
+			}
+				
+			.thecolor2{
+				color:#999999;
+			}
+			#d10+div ul li a{
+				color: #eeeeee;;
+			}
+			#d11 div div ul li a{
+				color: #EEEEEE;
+			}
+			#body1 div div :not(first-child){
+				color: #000000;
+			}
+			.thecolor{
+				border: 1px solid #eeee;
+			}
+			.thebottom{
+				border-top: 1px solid #EEEEEE;
+			}
+			
+			
+			@media (min-width:992px) and (max-width:1200px) {
+				.test{
+					padding-top: 10px;
+					z-index: 100000;
+					font-size: 10px;
+				}
+				#u2 li a{
+					font-size: 5;
+					z-index: 10000;
+				}
+				
+			}
+			@media (min-height:1200px) {
+				.the10{
+					font-size: 8px;
+					border: 1px solid black;
+					z-index: 100000;
+				}
+			}
